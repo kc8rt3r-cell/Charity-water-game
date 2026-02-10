@@ -1,0 +1,47 @@
+:root {
+  --sky-top: #d6f3ff;
+  --sky-mid: #8ed6f7;
+  --sky-bottom: #2f6b8f;
+  --ink: #0a2233;
+  --accent: #ffc933;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
+  background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-mid) 45%, var(--sky-bottom) 100%);
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  color: var(--ink);
+}
+
+.game-shell {
+  width: 100vw;
+  min-height: 100dvh;
+  display: flex;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  touch-action: manipulation;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
